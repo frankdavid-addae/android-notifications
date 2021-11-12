@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowNotification = findViewById(R.id.btnShowNotification);
 
         btnShowNotification.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View view) {
                 setUpNotification();
